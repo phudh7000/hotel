@@ -1,12 +1,357 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./css/index.css">
     <title>Document</title>
+
 </head>
+
 <body>
-    hello world!
+    <div class="wrapper">
+        <div id="top"></div>
+        <div class="header" id="header">
+            <div class="flex container">
+                <div class="logo">
+                    <a href="">
+                        <img src="http://fibo.webhotel.vn/files/images/comment/fibo.png" alt="khong co anh">
+                    </a>
+                </div>
+                <div class="navbar">
+                    <ul class="navbar_items">
+                        <li class="navbar_item">
+                            <a href="#" class="navbar_link">
+                                home
+                            </a>
+                        </li>
+                        <li class="navbar_item">
+                            <a href="#" class="navbar_link">
+                                aboutus
+                            </a>
+                        </li>
+                        <li class="navbar_item">
+                            <a href="#" class="navbar_link">
+                                rooms
+                            </a>
+                        </li>
+                        <li class="navbar_item">
+                            <a href="#" class="navbar_link">
+                                services
+                            </a>
+                        </li>
+                        <li class="navbar_item">
+                            <a href="#" class="navbar_link">
+                                tours info
+                            </a>
+                        </li>
+                        <li class="navbar_item">
+                            <a href="#" class="navbar_link">
+                                promotions
+                            </a>
+                        </li>
+                        <li class="navbar_item">
+                            <a href="#" class="navbar_link">
+                                contact
+                            </a>
+                        </li>
+                        <li class="navbar_item">
+                            <a href="#" class="navbar_link">
+                                reservations
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="btn-bars">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                </div>
+                <div class="number_phone">
+                    <span><i class="fas fa-phone-alt"></i>(024) 2242 0777</span>
+                    <div class="flag">
+                        <img src="http://fibo.webhotel.vn/files/images/comment/English.png" alt="">
+                        <img src="http://fibo.webhotel.vn/files/images/comment/vietnamese.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- BODY -->
+
+        <div class="body">
+            <div class="slider">
+                <button class="slider_btn" id="previous"><i class="fal fa-chevron-circle-left"></i></button>
+                <!-- <div class="slide_show"></div> -->
+                <button class="slider_btn" id="next"><i class="fal fa-chevron-circle-right"></i></button>
+            </div>
+            <div class="filter">
+                <div class="filter_title">
+                    <h1>Book Now</h1>
+                    <p>
+                        Best Price Guaranted
+                    </p>
+                </div>
+                <div class="filter_details">
+                    <form action="#">
+                        <div class="form_in">
+                            <select name="" id="">
+                                <option value="">Adult</option>
+                                <option value="">1</option>
+                                <option value="">2</option>
+                                <option value="">3</option>
+                                <option value="">4</option>
+                                <option value="">5</option>
+                                <option value="">6</option>
+                                <option value="">7</option>
+                                <option value="">8</option>
+                                <option value="">9</option>
+                                <option value="">10</option>
+                            </select>
+
+                            <input placeholder="Arrival Date" type="text" onfocus="(this.type='date')"
+                                onblur="(this.type='text')">
+                            <input placeholder="Departure Date" type="text" onfocus="(this.type='date')"
+                                onblur="(this.type='text')">
+
+                            <select name="" id="">
+                                <option value="">Child</option>
+                                <option value="">1</option>
+                                <option value="">2</option>
+                                <option value="">3</option>
+                                <option value="">4</option>
+                                <option value="">5</option>
+                                <option value="">6</option>
+                                <option value="">7</option>
+                                <option value="">8</option>
+                                <option value="">9</option>
+                                <option value="">10</option>
+                            </select>
+                        </div>
+                        <button>CHECK AVAILABILITY</button>
+                    </form>
+                </div>
+            </div>
+            <div class="about_us container flex">
+                <div class="about_us-content">
+                    <h1>
+                        ABOUT US
+                    </h1>
+                    <p>
+                        Fibo Hotel is located in the west of Hanoi. Fibo Hotel is a great destination and brings you the
+                        most enjoyable experience when you come to us. Come to Fibo Hotel, you will be immersed in fresh
+                        nature, to participate in leisure activities, relax to take away the sorrows and chaos of life.
+                        Fibo
+                        Hotel with all kinds of amenities and modern bungalows combined traditional style, restaurant
+                        system, conference room, ...
+                    </p>
+                    <p>
+                        Fibo Hotel with fully furnished rooms and villas, interior space is decorated in luxurious style
+                        mixed with traditional Vietnamese and modern Western. We have well trained, professional and
+                        professional staff, dedicated service.
+                    </p>
+                    <button class="btn-rect">LEARN MORE</button>
+                </div>
+
+                <img src="http://fibo.webhotel.vn/files/images/Article/about.jpg" alt="">
+            </div>
+
+
+            <div class="introduces">
+                <div class="introduce_room">
+                    <h1 class="title_introduce">HOTEL ROOM</h1>
+                    <div class="criterias">
+                        <div class="criteria">
+                            <img src="http://fibo.webhotel.vn/files/images/Room/deluxe/406_1.jpg" alt="">
+                            <div class="description">
+                                <h1>DELUXE ROOM</h1>
+                                <p>Deluxe rooms with harmonious design, luxurious interior with full modern facilities.
+                                    Area
+                                    of
+                                    about 60-65m2 /room is equipped with windows and balcony.</p>
+                            </div>
+                        </div>
+                        <div class="criteria">
+                            <img src="http://fibo.webhotel.vn/files/images/Room/superior/502_2.jpg" alt="">
+                            <div class="description">
+                                <h1>SUITE ROOM</h1>
+                                <p>The Royal Suite has a total area of ​​about 70m <sup>2</sup>, which is divided into a
+                                    bedroom
+                                    and a separate living room with a small balcony with tea table.</p>
+                            </div>
+                        </div>
+                        <div class="criteria">
+                            <img src="http://fibo.webhotel.vn/files/images/Room/suite/401_1.jpg" alt="">
+                            <div class="description">
+                                <h1>SUPERIOR ROOM</h1>
+                                <p>Standard rooms are about 20m <sup>2</sup> are designed in harmony with luxury
+                                    furniture
+                                    and
+                                    full of modern facilities and to the comfort and convenience.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="introduce_service container">
+                    <h1 class="title_introduce">OUR SERVICE</h1>
+                    <p>Come to us you will receive the best services and incentives</p>
+                    <div class="services">
+                        <ul>
+                            <li>Two cable</li>
+                            <li>Bed</li>
+                            <li>Mini bar</li>
+                            <li>Shower</li>
+                        </ul>
+                        <ul>
+                            <li>Hair dryer</li>
+                            <li>Automatic locking system</li>
+                            <li>Hot water</li>
+                            <li>Telephone</li>
+                            <li>Free Wifi</li>
+                        </ul>
+                        <ul>
+                            <li>Make room: two times per day</li>
+                            <li>VIP check-in as requested</li>
+                            <li>Daily two complimentary bottled drinking water</li>
+                            <li>Daily complimentary shoeshine service</li>
+                        </ul>
+                        <ul>
+                            <li>Daily complimentary coffee & tea</li>
+                            <li>Culture magazine in English</li>
+                            <li>Laundry/ Pressing services</li>
+                            <li>Office services</li>
+                            <li>Room services</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="banner container">
+                    <div class="banner_title">
+                        <h1>CLIENTFEEDBACK</h1>
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing and Lorem Ipsum has been the great font.
+                        </p>
+                        <a href="#">
+                            <img src="http://fibo.webhotel.vn/Content/Img/tripad_certificate.png" alt="">
+                        </a>
+                    </div>
+                    <div class="banner_items">
+                        <div class="banner_item hidden">
+                            <h1>MINH QUOC</h1>
+                            <p>Very impressed with the service and staff here, i will visit you next time</p>
+                        </div>
+                        <div class="banner_item show">
+                            <h1>HOANG ANH</h1>
+                            <p>Service is very good and professional, thank you and wish you more success</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="introduce_events container">
+                    <h1 class="title_introduce">OUR EVENTS</h1>
+                    <img style="max-width: 100%;" src="http://fibo.webhotel.vn/Content/Img/img-baner-event.jpg" alt="">
+                    <div class="event_items flex">
+                        <div class="event_item">
+                            <h1>BANQUET</h1>
+                            <p>The professional staff at Fibo Hotel will help you plan and organize perfect meetings and
+                                conferences</p>
+                            <button class="btn-rect">Read More</button>
+                        </div>
+                        <div class="event_item">
+                            <h1>CONFERENCE</h1>
+                            <p><Strong>Conference room:</Strong> If you plan to organize meetings, workshops or seminars
+                                in
+                                Hanoi, Fibo Hotel's
+                                meeting room </p>
+                            <button class="btn-rect">Read More</button>
+                        </div>
+                        <div class="event_item">
+                            <h1>EVENT</h1>
+                            <p>Fibo Hotel specializes in serving the needs of organizing conferences, seminars, events
+                                and
+                                catering to the needs of your guests.</p>
+                            <button class="btn-rect">Read More</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="introduce_gallery">
+                    <h1 class="title_introduce">OUR GALLERY</h1>
+                    <div class="owl-carousel owl-theme">
+                        <img class="item" src="http://fibo.webhotel.vn/files/images/gallery/1.jpg" alt="">
+                        <img class="item" src="http://fibo.webhotel.vn/files/images/gallery/2.jpg" alt="">
+                        <img class="item" src="http://fibo.webhotel.vn/files/images/gallery/3.jpg" alt="">
+                        <img class="item" src="http://fibo.webhotel.vn/files/images/gallery/4.jpg" alt="">
+                        <img class="item" src="http://fibo.webhotel.vn/files/images/gallery/5.jpg" alt="">
+                        <img class="item" src="http://fibo.webhotel.vn/files/images/gallery/6.jpg" alt="">
+                        <img class="item" src="http://fibo.webhotel.vn/files/images/gallery/7.jpg" alt="">
+                        <img class="item" src="http://fibo.webhotel.vn/files/images/gallery/8.jpg" alt="">
+                        <img class="item" src="http://fibo.webhotel.vn/files/images/gallery/9.jpg" alt="">
+                        <img class="item" src="http://fibo.webhotel.vn/files/images/gallery/10.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- FOOTER -->
+
+        <div class="footer container">
+            <div class="contact">
+                <h1 class="title_footer">FIFO HOTEL</h1>
+                <p>
+                    Address: 147 Mai Dich Street, Cau Giay District, Hanoi
+                </p>
+                <p><i class="fas fa-phone-alt"></i>Tel: (024) 2242 0777</p>
+                <a href="#"><i class="far fa-envelope"></i>Email: info@webhotel.vn</a>
+                <p><i class="fas fa-phone-office"></i> :</p>
+
+                <div class="community">
+                    <a href="#"><i class="fab fa-facebook-square"></i></a>
+                    <a href="#"><i class="fab fa-twitter-square"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="about">
+                <h1 class="title_footer">ABOUT US</h1>
+                <ul>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Term & Conditions</a></li>
+                    <li><a href="#">News</a></li>
+                    <li><a href="#">Contact us</a></li>
+                    <li><a href="#">Location & map</a></li>
+                </ul>
+            </div>
+            <div class="news">
+                <h1 class="title_footer">LASTEST NEWS</h1>
+                <ul>
+                    <li><a href="#">HANOI CITADEL</a></li>
+                    <li><a href="#">DELICIOUS ASIAN SPECIALTIES</a></li>
+                    <li><a href="#">HO CHI MINH STILT HOUSE</a></li>
+                </ul>
+            </div>
+
+            <div class="copyright">
+                <p>Copyright © FIBO HOTEL 2018 All Rights Reserved | <a href="#">Desigh by webhotel</a> redo by hoangphu
+                </p>
+            </div>
+        </div>
+
+        <div id="backToTop">
+            <a href="#top"><i class="fal fa-arrow-to-top"></i></a>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+    integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+    crossorigin="anonymous"></script>
+    <script src="./js/index.js"></script>
 </body>
+
 </html>
