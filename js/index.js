@@ -31,11 +31,11 @@ function moveHeader() {
 function runSlides() {
 
     var listSlide = [
-        'http://fibo.webhotel.vn/files/images/slide/406_2.jpg',
-        'http://fibo.webhotel.vn/files/images/slide/502_2.jpg',
-        'http://fibo.webhotel.vn/files/images/slide/Restaurant_1.jpg',
-        'http://fibo.webhotel.vn/files/images/slide/406_4.jpg',
-        'http://fibo.webhotel.vn/files/images/slide/111.jpg',
+        'https://mariaelenavillas.gr/wp-content/uploads/2018/10/maria-elena-villas-halkidiki-daphne-13_result-1350x650.jpg',
+        'https://mariaelenavillas.gr/wp-content/uploads/2018/10/maria-elena-villas-halkidiki-daphne-14_result-1350x650.jpg',
+        'https://www.chaitanyafurniture.com/wp-content/uploads/2020/07/slide11-1350x650.jpg',
+        'https://lh3.googleusercontent.com/proxy/GEZVwtzYM4v-7-1qFbfgoElQfL3FF0qbHUklRQ1lOD-tUYx2w66IWbTk27vxY5Hbbr3G4xZeTcMtbzRg7hGmL2uNikOAg1NEKXINWqLcIE9oAl_9O8HZWIotcm6232H2RaKF',
+        'https://suradtrading.com/wp-content/uploads/2018/04/meeting-chair-1350x650.jpg',
     ]
 
     let i = 0;

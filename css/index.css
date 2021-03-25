@@ -86,6 +86,10 @@ html{
     margin-left: 20px;
 }
 
+.flag img{
+    width: 35px;
+    height: 23px;
+}
 
 /* BODY */
 
@@ -385,17 +389,7 @@ html{
 
 /* OUR GALLERY */
 
-/* .slider_items{
-    margin: 20px auto 50px auto;
-    display: flex;
-    overflow: hidden;
-}
 
-.slide_item{
-    width: 25%;
-    display: block;
-    border-right: 1px #fff solid;
-} */
 /* FOOTER */
 
 .footer{
