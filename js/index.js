@@ -3,6 +3,9 @@ var slider = document.querySelector('.slider');
 var bannerItem = document.getElementsByClassName('banner_item');
 var btnBars = document.querySelector('.btn-bars');
 var menu = document.querySelector('.navbar_items');
+var btnNext = document.getElementById('next');
+var btnPrevious = document.getElementById('previous');
+
 
 function moveHeader() {
     var ok = 0;
@@ -29,23 +32,55 @@ function moveHeader() {
 
 
 function runSlides() {
-
+    let i = 0;
+    let flag =false;
+    
     var listSlide = [
         'https://mariaelenavillas.gr/wp-content/uploads/2018/10/maria-elena-villas-halkidiki-daphne-13_result-1350x650.jpg',
         'https://mariaelenavillas.gr/wp-content/uploads/2018/10/maria-elena-villas-halkidiki-daphne-14_result-1350x650.jpg',
         'https://www.chaitanyafurniture.com/wp-content/uploads/2020/07/slide11-1350x650.jpg',
-        'https://lh3.googleusercontent.com/proxy/GEZVwtzYM4v-7-1qFbfgoElQfL3FF0qbHUklRQ1lOD-tUYx2w66IWbTk27vxY5Hbbr3G4xZeTcMtbzRg7hGmL2uNikOAg1NEKXINWqLcIE9oAl_9O8HZWIotcm6232H2RaKF',
+        'https://suradtrading.com/wp-content/uploads/2018/04/books-1350x650.jpg',
         'https://suradtrading.com/wp-content/uploads/2018/04/meeting-chair-1350x650.jpg',
     ]
+        
+    btnPrevious.onclick = ()=>{
+        slider.style.backgroundImage = `url(${listSlide[i]})`;
+        if (i == 0)
+            i = listSlide.length - 1;
+        else i--;
 
-    let i = 0;
-    setInterval(() => {
+        flag = true;
+
+        setTimeout(() => {
+            flag =false;
+        }, 4000);
+
+        }
+    btnNext.onclick = ()=>{
         slider.style.backgroundImage = `url(${listSlide[i]})`;
         if (i >= listSlide.length - 1)
             i = 0;
         else i++;
-    }, 5000);
+        flag = true;
+
+        setTimeout(() => {
+            flag =false;
+        }, 4000);
+
+        }
+    
+    setInterval(() => {
+
+        if(!flag){
+            slider.style.backgroundImage = `url(${listSlide[i]})`;
+            if (i >= listSlide.length - 1)
+                i = 0;
+            else i++;
+        }
+
+    }, 7000);
 }
+
 
 function nextContentBanner() {
     let i = 0;

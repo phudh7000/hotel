@@ -103,7 +103,7 @@ html{
     position: relative;
     background-size: cover;
     background-image: url('https://suradtrading.com/wp-content/uploads/2018/04/meeting-chair-1350x650.jpg');
-    transition-duration: 2s;
+    transition-duration: 1s;
 }
 
 .slider_btn{
