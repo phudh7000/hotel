@@ -3,10 +3,6 @@
     margin: 0;
 }
 
-/* .wrapper{
-    max-width: 1519px;
-    margin: 0 auto;
-} */
 
 p,h1,a{
     font-family: 'MyriadPro', sans-serif !important;
@@ -99,7 +95,7 @@ html{
     position: relative;
     background-size: cover;
     background-image: url('https://suradtrading.com/wp-content/uploads/2018/04/meeting-chair-1350x650.jpg');
-    transition-duration: 1s;
+    transition-duration: .5s;
 }
 
 .slider_btn{

@@ -33,8 +33,7 @@ function moveHeader() {
 
 function runSlides() {
     let i = 0;
-    let flag =false;
-    
+
     var listSlide = [
         'https://mariaelenavillas.gr/wp-content/uploads/2018/10/maria-elena-villas-halkidiki-daphne-13_result-1350x650.jpg',
         'https://mariaelenavillas.gr/wp-content/uploads/2018/10/maria-elena-villas-halkidiki-daphne-14_result-1350x650.jpg',
@@ -44,41 +43,24 @@ function runSlides() {
     ]
         
     btnPrevious.onclick = ()=>{
-        slider.style.backgroundImage = `url(${listSlide[i]})`;
         if (i == 0)
             i = listSlide.length - 1;
         else i--;
-
-        flag = true;
-
-        setTimeout(() => {
-            flag =false;
-        }, 4000);
-
+        slider.style.backgroundImage = `url(${listSlide[i]})`;
         }
     btnNext.onclick = ()=>{
-        slider.style.backgroundImage = `url(${listSlide[i]})`;
         if (i >= listSlide.length - 1)
             i = 0;
         else i++;
-        flag = true;
-
-        setTimeout(() => {
-            flag =false;
-        }, 4000);
-
+        slider.style.backgroundImage = `url(${listSlide[i]})`;
         }
     
-    setInterval(() => {
-
-        if(!flag){
+        setInterval(() => {
             slider.style.backgroundImage = `url(${listSlide[i]})`;
             if (i >= listSlide.length - 1)
                 i = 0;
             else i++;
-        }
-
-    }, 7000);
+    }, 5000);
 }
 
 
@@ -128,7 +110,7 @@ $('.owl-carousel').owlCarousel({
     loop:true,
     margin:1,
     autoplay:true,
-    autoplayTimeout:10000,
+    autoplayTimeout:7000,
     responsive:{
         0:{
             items:2
