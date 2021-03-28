@@ -488,13 +488,6 @@ html{
 } 
 
 @media screen and (max-width: 1090px){
-    .navbar_items{
-        display: none;
-    }
-    .btn-bars{
-        display: block;
-    }
-
     .about_us{
         justify-content: center;
     }

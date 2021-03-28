@@ -92,9 +92,19 @@ function nextContentBanner() {
         bannerItem[i].classList.add('show');
     }, 3000);
 }
-
+window.onresize =() =>{
+        if(window.innerWidth >= 1090){
+            menu.style.display = 'flex';
+            btnBars.style.display ='none';
+            
+        }else{
+            menu.style.display = 'none';
+            btnBars.style.display ='block';
+        }
+    }
 function menuShow(){
     let flag = true;
+    
 
    btnBars.onclick = ()=>{
        if(flag){
