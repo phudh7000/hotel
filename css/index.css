@@ -102,7 +102,6 @@ html{
     position: absolute;
     left: 0;
     z-index: -1;
-    /* display: none; */
 }
 
 .slider_btn{
@@ -556,6 +555,7 @@ html{
         height: 150px;
     }
     .introduce_room .criteria{
+        margin: 0;
         max-width: 100%;
     }
 
