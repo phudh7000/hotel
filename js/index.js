@@ -53,7 +53,7 @@ function runSlides() {
         setTimeout(() => {
             imgShow.setAttribute('src', imgFade.getAttribute('src'));
             imgShow.style.opacity = 1;
-        }, 1000);
+        }, 500);
     }
 
     btnNext.onclick = () => {
@@ -66,7 +66,7 @@ function runSlides() {
         setTimeout(() => {
             imgShow.setAttribute('src', imgFade.getAttribute('src'));
             imgShow.style.opacity = 1;
-        }, 1000);
+        }, 500);
     }
 
     setInterval(() => {
@@ -82,7 +82,7 @@ function runSlides() {
         setTimeout(() => {
             imgShow.setAttribute('src', imgFade.getAttribute('src'));
             imgShow.style.opacity = 1;
-        }, 1000);
+        }, 500);
         
     }, 7000);
 }
