@@ -1,5 +1,6 @@
 var header = document.querySelector('#header');
-var slider = document.querySelector('.slider');
+var imgShow = document.querySelector('#show');
+var imgFade = document.querySelector('#fade');
 var bannerItem = document.getElementsByClassName('banner_item');
 var btnBars = document.querySelector('.btn-bars');
 var menu = document.querySelector('.navbar_items');
@@ -41,26 +42,49 @@ function runSlides() {
         'https://suradtrading.com/wp-content/uploads/2018/04/books-1350x650.jpg',
         'https://suradtrading.com/wp-content/uploads/2018/04/meeting-chair-1350x650.jpg',
     ]
-        
-    btnPrevious.onclick = ()=>{
-        if (i == 0)
+
+    btnPrevious.onclick = () => {
+        if (i <=0)
             i = listSlide.length - 1;
         else i--;
-        slider.style.backgroundImage = `url(${listSlide[i]})`;
-        }
-    btnNext.onclick = ()=>{
+        imgFade.setAttribute('src', listSlide[i]);
+        imgShow.style.opacity = 0;
+        
+        setTimeout(() => {
+            imgShow.setAttribute('src', imgFade.getAttribute('src'));
+            imgShow.style.opacity = 1;
+        }, 1000);
+    }
+
+    btnNext.onclick = () => {
         if (i >= listSlide.length - 1)
             i = 0;
         else i++;
-        slider.style.backgroundImage = `url(${listSlide[i]})`;
-        }
-    
-        setInterval(() => {
-            slider.style.backgroundImage = `url(${listSlide[i]})`;
-            if (i >= listSlide.length - 1)
-                i = 0;
-            else i++;
-    }, 5000);
+        imgFade.setAttribute('src', listSlide[i]);
+        imgShow.style.opacity = 0;
+        
+        setTimeout(() => {
+            imgShow.setAttribute('src', imgFade.getAttribute('src'));
+            imgShow.style.opacity = 1;
+        }, 1000);
+    }
+
+    setInterval(() => {
+        
+        
+        
+        if (i >= listSlide.length - 1)
+            i = 0;
+        else i++;
+        imgFade.setAttribute('src', listSlide[i]);
+        imgShow.style.opacity = 0;
+        
+        setTimeout(() => {
+            imgShow.setAttribute('src', imgFade.getAttribute('src'));
+            imgShow.style.opacity = 1;
+        }, 1000);
+        
+    }, 7000);
 }
 
 
@@ -69,35 +93,35 @@ function nextContentBanner() {
     setInterval(() => {
         bannerItem[i].classList.add('hidden');
         bannerItem[i].classList.remove('show');
-        i == bannerItem.length-1 ? i = 0 : i++;
+        i == bannerItem.length - 1 ? i = 0 : i++;
         bannerItem[i].classList.remove('hidden');
         bannerItem[i].classList.add('show');
     }, 3000);
 }
-window.onresize =() =>{
-        if(window.innerWidth >= 1090){
-            menu.style.display = 'flex';
-            btnBars.style.display ='none';
-            
-        }else{
-            menu.style.display = 'none';
-            btnBars.style.display ='block';
-        }
-    }
-function menuShow(){
-    let flag = true;
-    
+window.onresize = () => {
+    if (window.innerWidth >= 1090) {
+        menu.style.display = 'flex';
+        btnBars.style.display = 'none';
 
-   btnBars.onclick = ()=>{
-       if(flag){
-        menu.style.display ='flex';  
-        flag = false;
-       }else{
-        menu.style.display ='none';
-        flag = true;
-       }
-    
-}; 
+    } else {
+        menu.style.display = 'none';
+        btnBars.style.display = 'block';
+    }
+}
+function menuShow() {
+    let flag = true;
+
+
+    btnBars.onclick = () => {
+        if (flag) {
+            menu.style.display = 'flex';
+            flag = false;
+        } else {
+            menu.style.display = 'none';
+            flag = true;
+        }
+
+    };
 }
 
 menuShow();
@@ -107,19 +131,19 @@ runSlides();
 moveHeader();
 
 $('.owl-carousel').owlCarousel({
-    loop:true,
-    margin:1,
-    autoplay:true,
-    autoplayTimeout:7000,
-    responsive:{
-        0:{
-            items:2
+    loop: true,
+    margin: 1,
+    autoplay: true,
+    autoplayTimeout: 7000,
+    responsive: {
+        0: {
+            items: 2
         },
-        600:{
-            items:3
+        600: {
+            items: 3
         },
-        1000:{
-            items:4
+        1000: {
+            items: 4
         }
     }
 })

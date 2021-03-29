@@ -90,12 +90,19 @@ html{
 /* BODY */
 
 .slider{
-    width: 100%;
-    height: 100vh;
     position: relative;
     background-size: cover;
-    background-image: url('https://suradtrading.com/wp-content/uploads/2018/04/meeting-chair-1350x650.jpg');
-    transition-duration: .5s;
+}
+
+.slider img{
+    transition-duration: 500ms;
+}
+
+.slider #fade{
+    position: absolute;
+    left: 0;
+    z-index: -1;
+    /* display: none; */
 }
 
 .slider_btn{
@@ -104,6 +111,7 @@ html{
     cursor: pointer;
     background-color:transparent;
     position: absolute;
+    z-index: 2;
     bottom: 50%;
 }
 
@@ -484,6 +492,12 @@ html{
 } 
 
 @media screen and (max-width: 1090px){
+    .navbar_items{
+        display: none;
+    }
+    .btn-bars{
+        display: block;
+    }
     .about_us{
         justify-content: center;
     }
