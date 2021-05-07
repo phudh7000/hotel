@@ -579,4 +579,11 @@ html{
     .footer .news{
         display: none;
     }
+    .btn-bars{
+        right: 4px;
+    }
+    .number_phone{
+        display: none;
+    }
 }
+
